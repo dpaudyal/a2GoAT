@@ -11,7 +11,6 @@ using namespace std;
 GTreeManager::GTreeManager()    :
     GHistManager(),
     GConfigFile(),
-    inputFile(0),
     treeList(),
     treeCorreleatedToScalerReadList(),
     readList(),
@@ -40,6 +39,7 @@ GTreeManager::GTreeManager()    :
     pluto(NULL),
 #endif
     geant(NULL),
+    inputFile(0),
     outputFile(0)
 
 {
