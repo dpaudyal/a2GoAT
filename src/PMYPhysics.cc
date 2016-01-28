@@ -9,96 +9,172 @@ time 	= new GH1("time", 	"time", 	1400, -700, 700);
 time_hel0 	= new GH1("time_hel0", 	"time_hel0", 	1400, -700, 700);
 time_hel1 	= new GH1("time_hel1", 	"time_hel1", 	1400, -700, 700);
 
-time_2g 	= new GH1("time_2g",	"time_2g", 	1400, -700, 700);
-time_2g_hel0 	= new GH1("time_2g_hel0",	"time_2g_hel0", 	1400, -700, 700);
-time_2g_hel1 	= new GH1("time_2g_hel1",	"time_2g_hel1", 	1400, -700, 700);
-
-time_cut 	= new GH1("time_cut", 	"time_cut", 	1400, -700, 700);
-time_cut_hel0 	= new GH1("time_cut_hel0", 	"time_cut_hel0", 	1400, -700, 700);
-time_cut_hel1 	= new GH1("time_cut_hel1", 	"time_cut_hel1", 	1400, -700, 700);
-
-time_2g_cut = new GH1("time_2g_cut","time_2g_cut", 	1400, -700, 700);
-time_2g_cut_hel0 	= new GH1("time_2g_cut_hel0", 	"time_2g_cut_hel0", 	1400, -700, 700);
-time_2g_cut_hel1 	= new GH1("time_2g_cut_hel1", 	"time_2g_cut_hel1", 	1400, -700, 700);
-
 //***********************************************************************************************
 
-MM		= new GH1("MM", 	"MM", 	 	1500,   0, 1500);
-MM_hel0		= new GH1("MM_hel0", 	"MM_hel0", 	 	1500,   0, 1500);
-MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	1500,   0, 1500);
-
-MM_2g	= new GH1("MM_2g", 	"MM_2g", 	1500,   0, 1500);
-MM_2g_hel0	= new GH1("MM_2g_hel0", 	"MM_2g_hel0", 	1500,   0, 1500);
-MM_2g_hel1	= new GH1("MM_2g_hel1", 	"MM_2g_hel1", 	1500,   0, 1500);
-MM_1g1r  = new GH1("MM_1g1r", 	"MM_1g1r",     100, 100, 170);
+//MM		= new GH1("MM", 	"MM", 	 	500,   700, 1200);
+MM_hel0		= new GH1("MM_hel0", 	"MM_hel0", 	 	500,   700, 1200);
+MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
 
 //*********************************************************************************************
 
-IM 		= new GH1("IM", 	"IM", 		400,   0, 400);
-IM_hel0     = new GH1("IM_hel0", 	"IM_hel0", 		400,   0, 400);
-IM_hel1		= new GH1("IM_hel1", 	"IM_hel1", 		400,   0, 400);
-
-IM_2g 	= new GH1("IM_2g", 	"IM_2g", 	400,   0, 400);
-IM_2g_hel0 	= new GH1("IM_2g_hel0", 	"IM_2g_hel0", 	400,   0, 400);
-IM_2g_hel1 	= new GH1("IM_2g_hel1", 	"IM_2g_hel1", 	400,   0, 400);
-IM_1g1r  = new GH1("IM_1g1r", 	"IM_1g1r",     100, 100, 170);
+//**********************************************************************************************
+//**********************************************************************************************
 
 //**********************************************************************************************
 
-theta   = new GH1 ("theta", "theta",    180,    0,  180);
-theta_hel0   = new GH1 ("theta_hel0", "theta_hel0",    180,    0,  180);
-theta_hel1   = new GH1 ("theta_hel1", "theta_hel1",    180,    0,  180);
 
-theta_2g   = new GH1 ("theta_2g", "theta_2g",    180,    0,  180);
-theta_2g_hel0   = new GH1 ("theta_2g_hel0", "theta_2g_hel0",    180,    0,  180);
-theta_2g_hel1   = new GH1 ("theta_2g_hel1", "theta_2g_hel1",    180,    0,  180);
-
-//**********************************************************************************************
-
-phi_2g    = new GH1("phi_2g",        "phi_2g",   360, 0, 360);
-phi_all    = new GH1("phi_all",      "phi_all",     360, 0, 360);
-
-//**********************************************************************************************
-
-//phi_2g    = new GH1("phi_2g",        "phi_2g",   360, 0, 360);
-//phi_all    = new GH1("phi_all",      "phi_all",     360, 0, 360);
-phiBM    = new GH1("phiBM",        "phiBM",   360, 0, 360);
+//opening_angle 	= new GH1("opening_angle","opening_angle",180,0,180);
+//opening_angle_cuts 	= new GH1("opening_angle_cuts","opening_angle_cuts",180,0,180);
 //***********************************************************************************************
 
-PhotonEnergy    = new GH1 ("PhotonEnergy", "PhotonEnergy",  450, 0,   450);
-PhotonEnergy_hel0    = new GH1 ("PhotonEnergy_hel0", "PhotonEnergy_hel0",  450, 0,   450);
-PhotonEnergy_hel1    = new GH1 ("PhotonEnergy_hel1", "PhotonEnergy_hel1",  450, 0,   450);
-
-PhotonEnergy_2g    = new GH1 ("PhotonEnergy_2g", "PhotonEnergy_2g",  450, 0,   450);
-PhotonEnergy_2g_hel0    = new GH1 ("PhotonEnergy_2g_hel0", "PhotonEnergy_2g_hel0",  450, 0,   450);
-PhotonEnergy_2g_hel1    = new GH1 ("PhotonEnergy_2g_hel1", "PhotonEnergy_2g_hel1",  450, 0,   450);
+//PhotonEnergy    = new GH1 ("PhotonEnergy", "PhotonEnergy",  450, 0,   450);
+//PhotonEnergy_hel0    = new GH1 ("PhotonEnergy_hel0", "PhotonEnergy_hel0",  450, 0,   450);
+//PhotonEnergy_hel1    = new GH1 ("PhotonEnergy_hel1", "PhotonEnergy_hel1",  450, 0,   450);
 
 //*******************************************************************************************************
 
-TaggerChannel    = new GH1 ("TaggerChannel", "TaggerChannel",  352, 0,   352);
-TaggerChannel_hel0    = new GH1 ("TaggerChannel_hel0", "TaggerChannel_hel0",  352, 0,   352);
-TaggerChannel_hel1    = new GH1 ("TaggerChannel_hel1", "TaggerChannel_hel1",  352, 0,   352);
+//TaggerChannel    = new GH1 ("TaggerChannel", "TaggerChannel",  352, 0,   352);
+//TaggerChannel_hel0    = new GH1 ("TaggerChannel_hel0", "TaggerChannel_hel0",  352, 0,   352);
+//TaggerChannel_hel1    = new GH1 ("TaggerChannel_hel1", "TaggerChannel_hel1",  352, 0,   352);
 
-TaggerChannel_2g    = new GH1 ("TaggerChannel_2g", "TaggerChannel_2g",  352, 0,   352);
-TaggerChannel_2g_hel0    = new GH1 ("TaggerChannel_2g_hel0", "TaggerChannel_2g_hel0",  352, 0,   352);
-TaggerChannel_2g_hel1    = new GH1 ("TaggerChannel_2g_hel1", "TaggerChannel_2g_hel1",  352, 0,   352);
+//********************************************************************************************
+    H1theta_265_285 = new GH1("H1theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
 
-//*******************************2DHistograms **********************************************
- MM_IM 	= new GH2("MM_IM", 	"MM_IM",    100, 110, 160, 800, 400, 1200);
- //MM_TC 	= new GH2("MM_TC", 	"MM_TC",    352, 0, 352, 800, 400, 1200);
-//theta_phi_all  = new GH2("theta_phi_all",    "theta_phi_all",      180, 0, 180, 360, 0, 360);
-//theta_phi_2g  = new GH2("theta_phi_2g",    "theta_phi_2g",    180, 0, 180, 360, 0, 360);
+    H1MMcut = new GH1("H1MMcut","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
 
-//ME		= new GH1("ME", 	"ME", 	 	1500,   0, 1500);
-//MM_ME	= new GH2("MM_ME", "MM_ME", 1500, 0, 1500, 1500, 0, 1500);
+    H1MMcut_0 = new GH1("H1MMcut_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
 
-//MMTCTheta = new GH3("MMTCTheta", "MMTCTheta",  352, 0 , 352, 800, 400, 1200, 180, 0 , 180 );
-MMTCThetaP = new TH3D("MMTCThetaP", "MMTCThetaP",  352, 0 , 352, 800, 400, 1200, 180, 0 , 180 );
-MMTCThetaR = new TH3D("MMTCThetaR", "MMTCThetaR",  352, 0 , 352, 800, 400, 1200, 180, 0 , 180 );
+    H1MMcut_20 = new GH1("H1MMcut_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+    H1MMcut_40 = new GH1("H1MMcut_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_60 = new GH1("H1MMcut_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_80 = new GH1("H1MMcut_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_100 = new GH1("H1MMcut_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_120 = new GH1("H1MMcut_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_140 = new GH1("H1MMcut_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut_160 = new GH1("H1MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
 
 
+    H1theta_285_305 = new GH1("H1theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
 
-//MM_2g	= new GH1("ME_2g", 	"MM_2g", 	1500,   0, 1500);
+    H1MMcut1 = new GH1("H1MMcut1","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_0 = new GH1("H1MMcut1_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+
+    H1MMcut1_20 = new GH1("0MMcut1_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+    H1MMcut1_40 = new GH1("H1MMcut1_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_60 = new GH1("H1MMcut1_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_80 = new GH1("H1MMcut1_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_100 = new GH1("H1MMcut1_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_120 = new GH1("H1MMcut1_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_140 = new GH1("H1MMcut1_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut1_160 = new GH1("H1MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+
+
+    H1theta_305_325 = new GH1("H1theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+    H1MMcut2 = new GH1("H1MMcut2","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_0 = new GH1("H1MMcut2_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+
+    H1MMcut2_20 = new GH1("H1MMcut2_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+    H1MMcut2_40 = new GH1("H1MMcut2_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_60 = new GH1("H1MMcut2_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_80 = new GH1("H1MMcut2_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_100 = new GH1("H1MMcut2_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_120 = new GH1("H1MMcut2_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_140 = new GH1("H1MMcut2_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+    H1MMcut2_160 = new GH1("H1MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+
+//**************************************************************************************************************
+   H0theta_265_285 = new GH1("H0theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+   H0MMcut = new GH1("H0MMcut","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_0 = new GH1("H0MMcut_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut_20 = new GH1("H0MMcut_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut_40 = new GH1("H0MMcut_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_60 = new GH1("H0MMcut_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_80 = new GH1("H0MMcut_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_100 = new GH1("H0MMcut_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_120 = new GH1("H0MMcut_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_140 = new GH1("H0MMcut_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut_160 = new GH1("H0MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+
+
+   H0theta_285_305 = new GH1("H0theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+   H0MMcut1 = new GH1("H0MMcut1","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_0 = new GH1("H0MMcut1_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut1_20 = new GH1("H0MMcut1_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut1_40 = new GH1("H0MMcut1_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_60 = new GH1("H0MMcut1_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_80 = new GH1("H0MMcut1_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_100 = new GH1("H0MMcut1_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_120 = new GH1("H0MMcut1_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_140 = new GH1("H0MMcut1_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut1_160 = new GH1("H0MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+
+
+   H0theta_305_325 = new GH1("H0theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+   H0MMcut2 = new GH1("H0MMcut2","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_0 = new GH1("H0MMcut2_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut2_20 = new GH1("H0MMcut2_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+
+   H0MMcut2_40 = new GH1("H0MMcut2_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_60 = new GH1("H0MMcut2_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_80 = new GH1("H0MMcut2_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_100 = new GH1("H0MMcut2_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_120 = new GH1("H0MMcut2_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_140 = new GH1("H0MMcut2_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+
+   H0MMcut2_160 = new GH1("H0MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+
 
 
 //*******************************************************************************************
@@ -145,16 +221,16 @@ void	PMYPhysics::ProcessEvent()
         {
             ifstream infile;
             string inputFileA;
-            infile.open("/home/dpaudyal/Butanol_Polarization/May_data_4008.txt");
-            string number_file[5];
-            double polarisation[5];
+            infile.open("/home/dpaudyal/Butanol_Polarization/2014_Targ_Pol_correct.txt");
+            string number_file[450];
+            double polarisation[450];
             inputFileA = inputFile->GetName();
 
-            for( int i = 0; i < 5; i = i + 1 )
+            for( int i = 0; i < 450; i = i + 1 )
             {
                  infile >> number_file[i] >> polarisation[i];
             }
-            for( int i = 0; i < 5; i = i + 1 )
+            for( int i = 0; i < 450; i = i + 1 )
             {
                 if(number_file[i]==inputFileA)
                 {
@@ -163,149 +239,53 @@ void	PMYPhysics::ProcessEvent()
                 }
             }
         cout << "target polarisation: " << Target_Pol << " scaling factor: " << Scal_factor_target_pol << endl;
+
+	   // scale_factor_global = Scal_factor_target_pol;
+
+
         }
         eventzero = 1;
 
 //*********************************************************************************************
 
-
-    //*******************************************************************************
-
-
-    // Uncomment the following line to decode double hits in the tagger
-    //GetTagger()->DecodeDoubles();
-
-    // fill time diff (tagger - pi0), all pi0
-    FillTime(*GetNeutralPions(),time);
-    FillTimeCut(*GetNeutralPions(),time_cut);
-	
-	// fill missing mass, all pi0
-    FillMissingMass(*GetNeutralPions(),MM);
-    //FillMissingEnergy(*GetNeutralPions(),ME, MM_ME, kTRUE); // when i enable 2D it complains std::bad_alloc --->>> which means my program ran out of memory. perhaps () is never ar end.
-	
-	// fill invariant mass, all pi0
-    FillMass(*GetNeutralPions(),IM);
-
-
-    Filltheta(*GetNeutralPions(),theta, kTRUE);
-    FillPhotonEnergy(*GetNeutralPions(),PhotonEnergy);
-    FillTaggerChannel(*GetNeutralPions(),TaggerChannel);
-    Fillphi(*GetNeutralPions(),phi_all, kTRUE);
-
+//******************************************************************************
 
 
    //**********************************************************************
+    Int_t nerror = 0;
+    nerror = GetTrigger()->GetNErrors();
     Bool_t hel = GetTrigger()->GetHelicity();
+    if (nerror==0) {
     // cout << "helicity  "<< hel << endl;
         if (hel == kTRUE)
         {
 
                             FillTime(*GetNeutralPions(),time_hel0);
-                            FillTime(*GetNeutralPions(),time_cut_hel0);
-                            FillMass(*GetNeutralPions(),IM_hel0);
-                            Filltheta(*GetNeutralPions(),theta_hel0, kTRUE);
                             FillMissingMass(*GetNeutralPions(),MM_hel0, kTRUE);
-                            FillPhotonEnergy(*GetNeutralPions(),PhotonEnergy_hel0);
-                            FillTaggerChannel(*GetNeutralPions(),TaggerChannel_hel0);
-
+                            FillDilliComp( *GetTagger(),*GetRootinos(),*GetPhotons(), 20,
+                                                            H1theta_265_285, H1MMcut, H1MMcut_0, H1MMcut_20, H1MMcut_40, H1MMcut_60, H1MMcut_80, H1MMcut_100, H1MMcut_120,H1MMcut_140,H1MMcut_160,
+                                                            H1theta_285_305, H1MMcut1,H1MMcut1_0,H1MMcut1_20, H1MMcut1_40,H1MMcut1_60, H1MMcut1_80, H1MMcut1_100, H1MMcut1_120, H1MMcut1_140,H1MMcut1_160,
+                                                            H1theta_305_325, H1MMcut2,H1MMcut2_0,H1MMcut2_20, H1MMcut2_40,H1MMcut2_60, H1MMcut2_80, H1MMcut2_100, H1MMcut2_120, H1MMcut2_140,H1MMcut2_160);
 
         }
         else
         {
                              FillTime(*GetNeutralPions(),time_hel1);
-                             FillTime(*GetNeutralPions(),time_cut_hel1);
-                             FillMass(*GetNeutralPions(),IM_hel1);
-                             Filltheta(*GetNeutralPions(),theta_hel1, kTRUE);
                              FillMissingMass(*GetNeutralPions(),MM_hel1, kTRUE);
-                             FillPhotonEnergy(*GetNeutralPions(),PhotonEnergy_hel1);
-                             FillTaggerChannel(*GetNeutralPions(),TaggerChannel_hel1);
+                             FillDilliComp( *GetTagger(), *GetRootinos(),*GetPhotons(), 20,
+                                                             H0theta_265_285, H0MMcut, H0MMcut_0, H0MMcut_20, H0MMcut_40, H0MMcut_60, H0MMcut_80, H0MMcut_100, H0MMcut_120,H0MMcut_140,H0MMcut_160,
+                                                             H0theta_285_305, H0MMcut1,H0MMcut1_0,H0MMcut1_20, H0MMcut1_40,H0MMcut1_60, H0MMcut1_80, H0MMcut1_100, H0MMcut1_120, H0MMcut1_140,H0MMcut1_160,
+                                                             H0theta_305_325, H0MMcut2,H0MMcut2_0,H0MMcut2_20, H0MMcut2_40,H0MMcut2_60, H0MMcut2_80, H0MMcut2_100, H0MMcut2_120, H0MMcut2_140,H0MMcut2_160);
+
 
         }
 
 
-
-
-  //**********************************************************************
-		
-    // Some neutral decays
-    for (Int_t i = 0; i < GetNeutralPions()->GetNParticles(); i++)
-    {
-        // Fill MM for 2 photon decay
-        if ((GetNeutralPions()->GetNSubParticles(i) == 2) & (GetNeutralPions()->GetNSubPhotons(i) == 2))
-        {
-		// fill time diff (tagger - pi0), this pi0
-        FillTime(*GetNeutralPions(),i,time_2g);
-        FillTimeCut(*GetNeutralPions(),i,time_2g_cut);
-			
-		// fill missing mass, this pi0
-                FillMissingMass(*GetNeutralPions(),i,MM_2g);
-            
-		// fill invariant mass, this pi0
-            FillMass(*GetNeutralPions(),i,IM_2g);
-
-
-
-
-             Filltheta(*GetNeutralPions(),i,theta_2g, kTRUE);
-             FillPhotonEnergy(*GetNeutralPions(),i,PhotonEnergy_2g);
-             FillTaggerChannel(*GetNeutralPions(),i,TaggerChannel_2g);
-             Fillphi(*GetNeutralPions(),i,phi_2g, kTRUE);
-            // FillThetaPhi(*GetNeutralPions(),i, phi_2g, theta_phi_2g);
-            // FillThetaPhi(*GetNeutralPions(),phi_all, theta_phi_all);
-             FillBeamAsymmetry(*GetNeutralPions(),i, phiBM, kTRUE, 700, 1200);
-             FillThetaTCMM(*GetNeutralPions(), i, MMTCThetaP,MMTCThetaR);
-
-
-            //***************************************************************************
-
-            if (hel == kTRUE)
-            {
-
-                                FillTime(*GetNeutralPions(),i,time_2g_hel0);
-                                FillTime(*GetNeutralPions(),i,time_2g_cut_hel0);
-                                FillMass(*GetNeutralPions(),i,IM_2g_hel0);
-                                Filltheta(*GetNeutralPions(),i,theta_2g_hel0, kTRUE);
-                                FillMissingMass(*GetNeutralPions(),i,MM_2g_hel0, kTRUE);
-                                FillPhotonEnergy(*GetNeutralPions(),i,PhotonEnergy_2g_hel0);
-                                FillTaggerChannel(*GetNeutralPions(),i,TaggerChannel_2g_hel0);
-
-
-            }
-            else
-            {
-                                FillTime(*GetNeutralPions(),i,time_2g_hel1);
-                                FillTime(*GetNeutralPions(),i,time_2g_cut_hel1);
-                                FillMass(*GetNeutralPions(),i,IM_2g_hel1);
-                                Filltheta(*GetNeutralPions(),i,theta_2g_hel1, kTRUE);
-                                FillMissingMass(*GetNeutralPions(),i,MM_2g_hel1, kTRUE);
-                                FillPhotonEnergy(*GetNeutralPions(),i,PhotonEnergy_2g_hel1);
-                                FillTaggerChannel(*GetNeutralPions(),i,TaggerChannel_2g_hel1);
-
-            }
-
-         //**********************************************************************************
-
-        }
-
-        //**********************MM for one photon and one rootino*******************************
-        else if ((GetNeutralPions()->GetNSubPhotons(i) == 1) && (GetNeutralPions()->GetNSubRootinos(i) == 1))
-        {
-               FillMass(*GetNeutralPions(),i,IM_1g1r);
-               FillMissingMass(*GetNeutralPions(),i,MM_1g1r);
-        }
-
-   //************************************************************************************
 
     }
+  //**********************************************************************
 
-//*********************************MM n IM for one photon and one rootino*******************************
-   /*  if ((GetNeutralPions()->GetNSubPhotons(0) == 1) && (GetNeutralPions()->GetNSubRootinos(0) == 1))
-    {
-           FillMass(*GetNeutralPions(),0,IM_1g1r);
-           FillMissingMass(*GetNeutralPions(),0,MM_1g1r);
-    }*/
-       // FillIMMM(*GetNeutralPions(),0,MM_IM);
-        //FillIMMM(*GetNeutralPions(),0,MM_TC);
+
 //*************************************************************************************************
 }
 
@@ -322,299 +302,219 @@ Bool_t	PMYPhysics::Write()
 }
 //********************************************************************************************************
 
-void PMYPhysics::Filltheta(const GTreeParticle& tree, GH1* gHist, Bool_t TaggerBinning)
-{
-    for (Int_t i = 0; i < tree.GetNParticles(); i++)
-    {
-        for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-        {
-            if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-            if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
-
-            // calc particle time diff
-            Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(i);
-            if(TaggerBinning)   gHist->Fill(tree.GetTheta(i),time, GetTagger()->GetTaggedChannel(j));
-            else gHist->Fill(tree.GetTheta(i), time);
-        }
-    }
-}
-
-void PMYPhysics::Filltheta(const GTreeParticle& tree, Int_t particle_index, GH1* gHist, Bool_t TaggerBinning)
-{
-    for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-        if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-        if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
-        // calc particle time diff
-        Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
-        if(TaggerBinning)   gHist->Fill(tree.GetTheta(particle_index),time, GetTagger()->GetTaggedChannel(j));
-        else gHist->Fill(tree.GetTheta(particle_index), time);
-    }
-}
-
-
 //************************************************************************************************************
 
-void PMYPhysics::Fillphi(const GTreeParticle& tree, GH1* gHist, Bool_t TaggerBinning)
+    //cout << scale_factor_global << endl;
+
+   // gHist->Scale(Scal_factor_target_pol);
+//**************************************************************************************************************
+void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,
+                               GH1* theta_265_285,GH1* MMcut,GH1* MMcut_0,GH1* MMcut_20, GH1* MMcut_40,GH1* MMcut_60, GH1* MMcut_80, GH1* MMcut_100,
+                               GH1* MMcut_120,GH1* MMcut_140,GH1* MMcut_160,
+                               GH1* theta_285_305,GH1* MMcut1,GH1* MMcut1_0,GH1* MMcut1_20, GH1* MMcut1_40,GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,
+                               GH1* MMcut1_120,GH1* MMcut1_140,GH1* MMcut1_160,
+                               GH1* theta_305_325,GH1* MMcut2,GH1* MMcut2_0,GH1* MMcut2_20, GH1* MMcut2_40,GH1* MMcut2_60, GH1* MMcut2_80, GH1* MMcut2_100,
+                               GH1* MMcut2_120,GH1* MMcut2_140,GH1* MMcut2_160)
 {
-    for (Int_t i = 0; i < tree.GetNParticles(); i++)
+    for (Int_t i = 0; i < photontree.GetNParticles(); i++)
     {
         for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
         {
-            if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-            if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
 
-            // calc particle time diff
-            Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(i);
-
-            if(TaggerBinning) gHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(i)))*TMath::RadToDeg(), time, GetTagger()->GetTaggedChannel(j));
-            else gHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(i)))*TMath::RadToDeg(), time);   // Phi angle in the interval 0 to 2pi
-        }
-    }
-}
-
-void PMYPhysics::Fillphi(const GTreeParticle& tree, Int_t particle_index, GH1* gHist, Bool_t TaggerBinning)
-{
-    for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-        if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-        if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
-        // calc particle time diff
-        Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
-
-        if(TaggerBinning) gHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(particle_index)))*TMath::RadToDeg(), time, GetTagger()->GetTaggedChannel(j));
-        else gHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(particle_index)))*TMath::RadToDeg(), time);
-  }
-}
+            if ((taggertree.GetTaggedEnergy(j)>=265)&&( taggertree.GetTaggedEnergy(j)<285)&&(photontree.GetNParticles()==1))
+             {
+                 Double_t time;
+                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
 
 
-//*************************************************************************************************************
-/*
-void PMYPhysics::FillMissingEnergy(const GTreeParticle& tree, GH1* gHist, GH2* hHist, Bool_t TaggerBinning)
-{
-    for (Int_t i = 0; i < tree.GetNParticles(); i++)
-    {
-        for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-        {
-            FillMissingEnergy(tree, i, j, gHist, hHist, TaggerBinning);
-        }
-    }
-}
 
-void PMYPhysics::FillMissingEnergy(const GTreeParticle& tree, Int_t particle_index, GH1* gHist, GH2* hHist, Bool_t TaggerBinning)
-{
-    for (Int_t i = 0; i < GetTagger()->GetNTagged(); i++)
-    {
-        FillMissingEnergy(tree, particle_index, i, gHist, hHist, TaggerBinning);
-    }
-}
+                       if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
+                          {
+                            theta_265_285->Fill(photontree.GetTheta(0),time);
+                               // cout <<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Dilli " << endl;
 
-void PMYPhysics::FillMissingEnergy(const GTreeParticle& tree, Int_t particle_index, Int_t tagger_index, GH1* gHist, GH2* hHist, Bool_t TaggerBinning)
-{
-    if(RejectTagged(tagger_index)) return;
+                               }
 
-    // calc particle time diff
-    Double_t time = GetTagger()->GetTaggedTime(tagger_index) - tree.GetTime(particle_index);
+                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
+                                   {
+                                           FillMissingMass(photontree,i,j,MMcut);
 
-    // calc missing p4
+                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_0);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_20);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=40)&&(photontree.GetTheta(0)<60))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_40);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=60)&&(photontree.GetTheta(0)<80))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_60);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=80)&&(photontree.GetTheta(0)<100))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_80);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=100)&&(photontree.GetTheta(0)<120))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_100);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=120)&&(photontree.GetTheta(0)<140))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_120);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=140)&&(photontree.GetTheta(0)<160))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_140);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut_160);
+                                         }
 
-   TLorentzVector missingp4 = CalcMissingP4(tree, particle_index,tagger_index);
-
-   // Fill gHist and hHist
-   if(TaggerBinning)   hHist->Fill(missingp4.T(),time, missingp4.M(), GetTagger()->GetTaggedChannel(tagger_index));
-   else hHist->Fill(missingp4.T(),time, missingp4.M());
-
-   if(TaggerBinning)   gHist->Fill(missingp4.T(),time, GetTagger()->GetTaggedChannel(tagger_index));
-   else gHist->Fill(missingp4.T(),time);
-
-}
-*/
-
-////// ************************************************************************************************************
-/*
-void PMYPhysics::FillThetaPhi(const GTreeParticle& tree, GH1* hHist, GH2* ghHist)
-{
-  // hHist   --> phi hist
-  // ghHist  --> 2D theta-phi histogram
-  //Int_t nerror = GetTrigger()->GetNErrors();
-  for (Int_t i = 0; i < tree.GetNParticles(); i++)
-    {
-      for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-      // Is tagger channel rejected by user?
-      if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-      if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
-
-      // calc particle time diff
-      Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(i);
-
-      // Fill theta/phi histograms
-     // if (nerror==0) {
-        hHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(i)))*TMath::RadToDeg(), time);
-        ghHist->Fill(tree.GetTheta(i), (TVector2::Phi_0_2pi(tree.GetPhiRad(i)))*TMath::RadToDeg(), time);
-      }
-    }
- }
+                                      }
 
 
-void PMYPhysics::FillThetaPhi(const GTreeParticle& tree, Int_t particle_index, GH1* hHist, GH2* ghHist)
-{
-  // hHist   --> phi hist
-  // ghHist  --> 2D theta-phi prompt hist
-  //Int_t nerror = GetTrigger()->GetNErrors();
+                      }
 
-  for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-      // Is tagger channel rejected by user?
-      if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-      if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
+            if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305)&&(photontree.GetNParticles()==1))
+             {
+                 Double_t time;
+                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
 
-      // calc particle time diff
-      Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
 
-      // Fill theta/phi histograms
-     // if (nerror==0) {
-    hHist->Fill((TVector2::Phi_0_2pi(tree.GetPhiRad(particle_index)))*TMath::RadToDeg(), time);
-    ghHist->Fill(tree.GetTheta(particle_index), (TVector2::Phi_0_2pi(tree.GetPhiRad(particle_index)))*TMath::RadToDeg(), time);
-      }
- }
-*/
-//****************************************************************************************************************
 
-void PMYPhysics::FillPhotonEnergy(const GTreeParticle& tree, GH1* gHist)
-{
-   for (Int_t i = 0; i < tree.GetNParticles(); i++)
-   {
-       for(int j=0; j<GetTagger()->GetNTagged(); j++)
-       {
-           Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(i);
-           gHist->Fill(GetTagger()->GetTaggedEnergy(j), time);
+                       if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
+                          {
+                            theta_285_305->Fill(photontree.GetTheta(0),time);
+
+                               }
+
+                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
+                                   {
+                                             FillMissingMass(photontree,i,j,MMcut1);
+
+                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_0);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_20);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=40)&&(photontree.GetTheta(0)<60))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_40);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=60)&&(photontree.GetTheta(0)<80))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_60);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=80)&&(photontree.GetTheta(0)<100))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_80);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=100)&&(photontree.GetTheta(0)<120))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_100);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=120)&&(photontree.GetTheta(0)<140))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_120);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=140)&&(photontree.GetTheta(0)<160))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_140);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut1_160);
+                                         }
+
+                                      }
+
+
+                      }
+
+
+
+
+            if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325)&&(photontree.GetNParticles()==1))
+             {
+                 Double_t time;
+                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
+
+
+
+                       if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
+                          {
+                            theta_305_325->Fill(photontree.GetTheta(0),time);
+
+                               }
+
+                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
+                                   {
+                                            FillMissingMass(photontree,i,j,MMcut2);
+
+                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_0);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_20);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=40)&&(photontree.GetTheta(0)<60))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_40);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=60)&&(photontree.GetTheta(0)<80))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_60);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=80)&&(photontree.GetTheta(0)<100))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_80);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=100)&&(photontree.GetTheta(0)<120))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_100);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=120)&&(photontree.GetTheta(0)<140))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_120);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=140)&&(photontree.GetTheta(0)<160))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_140);
+                                        }
+                                        else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
+                                        {
+                                            FillMissingMass(photontree,i,j,MMcut2_160);
+                                         }
+
+                                      }
+
+
+                      }
+
+
+
+
+
+
+
+            }
        }
-   }
 }
 
-void PMYPhysics::FillPhotonEnergy(const GTreeParticle& tree, Int_t particle_index, GH1* gHist)
-{
-    for(int j=0; j<GetTagger()->GetNTagged(); j++)
-    {
-        Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
-        gHist->Fill(GetTagger()->GetTaggedEnergy(j),time);
-    }
-}
-
-//***********************************************************************************************************************
-
-void PMYPhysics::FillTaggerChannel(const GTreeParticle& tree, GH1* gHist)
-{
-   for (Int_t i = 0; i < tree.GetNParticles(); i++)
-   {
-       for(int j=0; j<GetTagger()->GetNTagged(); j++)
+Double_t PMYPhysics::Opening_Angle(const TLorentzVector& t1, const TLorentzVector& t2 )
        {
-           Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(i);
-           gHist->Fill(GetTagger()->GetTaggedChannel(j),time);
+            TVector3 p1 = t1.Vect();
+            TVector3 p2 = t2.Vect();
+            return p1.Angle(p2);
        }
-   }
-}
-
-void PMYPhysics::FillTaggerChannel(const GTreeParticle& tree, Int_t particle_index, GH1* gHist)
-{
-    for(int j=0; j<GetTagger()->GetNTagged(); j++)
-    {
-        Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
-        gHist->Fill(GetTagger()->GetTaggedChannel(j),time);
-    }
-}
-
-//************************************************************************************************************
-
-void PMYPhysics::FillIMMM(const GTreeParticle& tree, GH2* gHist,  Bool_t TaggerBinning)
-{
-  for (Int_t i = 0; i < tree.GetNParticles(); i++)
-    {
-      for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-        {
-      FillIMMM(tree, i, j, gHist, TaggerBinning);
-        }
-    }
-}
-
-void PMYPhysics::FillIMMM(const GTreeParticle& tree, Int_t particle_index, GH2* gHist, Bool_t TaggerBinning)
-{
-  for (Int_t i = 0; i < GetTagger()->GetNTagged(); i++)
-    {
-      FillIMMM(tree, particle_index, i, gHist,  TaggerBinning);
-    }
-}
-
-void PMYPhysics::FillIMMM(const GTreeParticle& tree, Int_t particle_index, Int_t tagger_index, GH2* gHist, Bool_t TaggerBinning)
-{
-  // Is tagger channel rejected by user?
-  if(GetTagger()->GetTaggedChannel(tagger_index) < GetTC_cut_min()) return;
-  if(GetTagger()->GetTaggedChannel(tagger_index) > GetTC_cut_max()) return;
-
-  // calc particle time diff
-  Double_t time = GetTagger()->GetTaggedTime(tagger_index) - tree.GetTime(particle_index);
-
-  // calc missing p4
-  TLorentzVector missingp4 = CalcMissingP4(tree, particle_index,tagger_index);
-
-  // Fill GH1
-  if(TaggerBinning)   gHist->Fill(tree.GetMass(particle_index), missingp4.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
-  else gHist->Fill(tree.GetMass(particle_index), missingp4.M(),time);
-  //if(TaggerBinning)   hHist->Fill(tree.GetMass(particle_index), missingp4.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
-    //else hHist->Fill(GetTagger()->GetTaggedChannel(tagger_index), missingp4.M(),time);
-}
-
-
-void PMYPhysics::FillThetaTCMM(const GTreeParticle& tree, TH3* gHistPrompt, TH3* gHistRandom )
-{
-
-  for (Int_t i = 0; i < tree.GetNParticles(); i++)
-    {
-      for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-     FillThetaTCMM(tree, i, j, gHistPrompt, gHistRandom);
-      }
-     }
-}
-
-
-
-void PMYPhysics::FillThetaTCMM(const GTreeParticle& tree, Int_t particle_index, TH3* gHistPrompt, TH3* gHistRandom  )
-{
-
-
-  for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-       FillThetaTCMM(tree, particle_index, j, gHistPrompt, gHistRandom );
-    }
-}
-
-void PMYPhysics::FillThetaTCMM(const GTreeParticle& tree, Int_t particle_index,  Int_t tagger_index, TH3* gHistPrompt, TH3* gHistRandom )
-{
-
-  for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-    {
-      // Is tagger channel rejected by user?
-      if(GetTagger()->GetTaggedChannel(j) < GetTC_cut_min()) continue;
-      if(GetTagger()->GetTaggedChannel(j) > GetTC_cut_max()) continue;
-
-      // calc particle time diff
-      Double_t time = GetTagger()->GetTaggedTime(j) - tree.GetTime(particle_index);
-      TLorentzVector missingp4 = CalcMissingP4(tree, particle_index,tagger_index);
-      thet = tree.GetTheta(particle_index);
-      TC= GetTagger()->GetTaggedChannel(tagger_index);
-
-      // Fill  histograms
-      if (GHistBGSub::IsPrompt(time)) gHistPrompt->Fill(TC, missingp4.M(),time, thet );
-      if (GHistBGSub::IsRandom(time)) gHistRandom->Fill(TC, missingp4.M(),time, thet );
-
-         //  if (GHistBGSub::IsPrompt(time)) gHistPrompt->Fill(tree.GetTheta(particle_index), missingp4.M(),time, GetTagger()->GetTaggedChannel(tagger_index) );
-           //if (GHistBGSub::IsRandom(time)) gHistRandom->Fill(tree.GetTheta(particle_index), missingp4.M(),time, GetTagger()->GetTaggedChannel(tagger_index) );
-    }
-}
-
-//***************************************************************************************************************
-
-
-
