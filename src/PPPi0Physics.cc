@@ -351,7 +351,7 @@ void	PPPi0Physics::ProcessEvent()
                                // FillMMTC(*GetNeutralPions(),i,MM_TC_2g_hel0,kTRUE);
                                 // FillDilliAsym(*GetNeutralPions(),i,300,320, hel0_theta_nocut,hel0_theta_imcut, hel0_imgg_0, hel0_imgg_10,  hel0_imgg_20, hel0_imgg_30,  hel0_imgg_40,  hel0_imgg_50,  hel0_imgg_60, hel0_imgg_70, hel0_imgg_80, hel0_imgg_90,  hel0_imgg_100,hel0_imgg_110, hel0_imgg_120, hel0_imgg_130,  hel0_imgg_140,  hel0_imgg_150, hel0_imgg_160, hel0_imgg_170,kTRUE);
                                   FillDilliAsym(*GetNeutralPions(),*GetTagger(),hel0_theta_nocut,hel0_theta_IMcut, hel0_theta_250_270, hel0_theta_270_290, hel0_theta_290_310, hel0_theta_MMcut,
-                                                     IM_hel0_0,  IM_hel0_20,  IM_hel0_40,    IM_hel0_60,  IM_hel0_80,  IM_hel0_100, IM_hel0_120,   IM_hel0_140,   IM_hel0_160);
+                                                     IM_hel0_0,  IM_hel0_20,  IM_hel0_40,    IM_hel0_60,  IM_hel0_80,  IM_hel0_100, IM_hel0_120,   IM_hel0_140,   IM_hel0_160, kTRUE);
 
             }
             else
@@ -367,7 +367,7 @@ void	PPPi0Physics::ProcessEvent()
                                // FillMMTC(*GetNeutralPions(),i,MM_TC_2g_hel1, kTRUE);
                                // FillDilliAsym(*GetNeutralPions(),i,300,320, hel1_theta_nocut,hel1_theta_imcut, hel1_imgg_0, hel1_imgg_10,  hel1_imgg_20, hel1_imgg_30,  hel1_imgg_40,  hel1_imgg_50,  hel1_imgg_60, hel1_imgg_70, hel1_imgg_80, hel1_imgg_90,  hel1_imgg_100,hel1_imgg_110, hel1_imgg_120, hel1_imgg_130,  hel1_imgg_140,  hel1_imgg_150, hel1_imgg_160, hel1_imgg_170,kTRUE);
                                  FillDilliAsym(*GetNeutralPions(),*GetTagger(), hel1_theta_nocut,hel1_theta_IMcut,  hel1_theta_250_270, hel1_theta_270_290, hel1_theta_290_310, hel1_theta_MMcut,
-                                                       IM_hel1_0,  IM_hel1_20, IM_hel1_40, IM_hel1_60, IM_hel1_80,  IM_hel1_100, IM_hel1_120,   IM_hel1_140,   IM_hel1_160);
+                                                       IM_hel1_0,  IM_hel1_20, IM_hel1_40, IM_hel1_60, IM_hel1_80,  IM_hel1_100, IM_hel1_120,   IM_hel1_140,   IM_hel1_160, kTRUE);
 
 
             }
@@ -448,7 +448,7 @@ void PPPi0Physics::Filltheta(const GTreeParticle& tree, Int_t particle_index, GH
 //************************************************************************************************************
 void PPPi0Physics::FillDilliAsym(const GTreeMeson& tree, const GTreeTagger& taggertree, GH1* gHist,
                                GH1* theta_imcut,GH1* theta_250_270,GH1* theta_270_290, GH1* theta_290_310,GH1* theta_MMcut, GH1* imgg_0, GH1* imgg_20,
-                               GH1* imgg_40,GH1* imgg_60,GH1* imgg_80, GH1* imgg_100, GH1* imgg_120,GH1* imgg_140, GH1* imgg_160)
+                               GH1* imgg_40,GH1* imgg_60,GH1* imgg_80, GH1* imgg_100, GH1* imgg_120,GH1* imgg_140, GH1* imgg_160, Bool_t TaggerBinning)
 {
     for (Int_t i = 0; i < tree.GetNParticles(); i++)
     {
@@ -462,52 +462,60 @@ void PPPi0Physics::FillDilliAsym(const GTreeMeson& tree, const GTreeTagger& tagg
 
                    if ((tree.GetMass(i)<=155)&&(tree.GetMass(i)>=115))
                         {
-                            theta_imcut->Fill(tree.GetTheta(i),time);
+                            theta_imcut->Fill(tree.GetTheta(i),time); 
 
                            // theta_imcut->Scale(Scal_factor_target_pol);
 
                           // cout <<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! main loop " << endl;
 
-                               }
-                       
+                               
+                                }
 
-                          if ((taggertree.GetTaggedEnergy(j)>=250)&&(taggertree.GetTaggedEnergy(j)<=270));
+                           if ((taggertree.GetTaggedEnergy(j)>=250)&&(taggertree.GetTaggedEnergy(j)<=270))
                                 {
-                                 theta_250_270->Fill(tree.GetTheta(i),time);
+                                     if(TaggerBinning)   theta_250_270->Fill(tree.GetTheta(i),time, GetTagger()->GetTaggedChannel(j));
+                                      else theta_250_270->Fill(tree.GetTheta(i), time); 
+
+                                  // theta_250_270->Fill(tree.GetTheta(i),time);
                                  //theta_250_270->Scale(Scal_factor_target_pol);
 
                              //   cout << " condition 1 " << endl;
 
                                   }
 
-                            if ((taggertree.GetTaggedEnergy(j)>=270)&&(taggertree.GetTaggedEnergy(j)<=290));
+                           else if ((taggertree.GetTaggedEnergy(j)>=270)&&(taggertree.GetTaggedEnergy(j)<=290))
                                   {
-                                    theta_270_290->Fill(tree.GetTheta(i),time);
+
+                                       if(TaggerBinning)   theta_270_290->Fill(tree.GetTheta(i),time, GetTagger()->GetTaggedChannel(j));
+                                      else theta_270_290->Fill(tree.GetTheta(i), time);
+                                   // theta_270_290->Fill(tree.GetTheta(i),time);
                                     //theta_270_290->Scale(Scal_factor_target_pol);
 
                                  //     cout << " condition 2" << endl;
 
                                      }
 
-                            if ((taggertree.GetTaggedEnergy(j)>=290)&&(taggertree.GetTaggedEnergy(j)<=310));
+                           else  if ((taggertree.GetTaggedEnergy(j)>=290)&&(taggertree.GetTaggedEnergy(j)<=310))
                                      {
+                                     if(TaggerBinning)   theta_290_310->Fill(tree.GetTheta(i),time, GetTagger()->GetTaggedChannel(j));
+                                      else theta_290_310->Fill(tree.GetTheta(i), time);
 
-                                      theta_290_310->Fill(tree.GetTheta(i),time);
+                                      //theta_290_310->Fill(tree.GetTheta(i),time);
                                       //theta_290_310->Scale(Scal_factor_target_pol);
 
                                   //       cout << " condition 3" << endl;
 
                                        }
 
-                                if ((CalcMissingMass(tree,0,j)<970)&&(CalcMissingMass(tree,0,j)>910))
-                                    {
+                            if ((CalcMissingMass(tree,0,j)<970)&&(CalcMissingMass(tree,0,j)>910))
+                              {
 
-                                        theta_MMcut->Fill(tree.GetTheta(i),time);
+                                    theta_MMcut->Fill(tree.GetTheta(i),time);
 
                                       //          cout << " condition 4" << endl;
 
+                                     }
 
-                                       }
                                         if ((tree.GetTheta(i)>=0)&&(tree.GetTheta(i)<20))
                                         {
                                             FillMass(tree,i,j,imgg_0);
@@ -547,12 +555,12 @@ void PPPi0Physics::FillDilliAsym(const GTreeMeson& tree, const GTreeTagger& tagg
 
 
 
-                            }
+                              }
+                           
 
+               }
 
-
-
-       }
+       
     }
 
     //cout << scale_factor_global << endl;

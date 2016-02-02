@@ -107,73 +107,73 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
     H1MMcut2_160 = new GH1("H1MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
 
 //**************************************************************************************************************
-   H0theta_265_285 = new GH1("H0theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+   H0theta_265_285 = new GH1("H0theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
 
-   H0MMcut = new GH1("H0MMcut","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut = new GH1("H0MMcut","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_0 = new GH1("H0MMcut_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut_0 = new GH1("H0MMcut_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = -1", 200,600,1200);
 
-   H0MMcut_20 = new GH1("H0MMcut_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut_20 = new GH1("H0MMcut_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = -1", 200,600,1200);
 
-   H0MMcut_40 = new GH1("H0MMcut_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_40 = new GH1("H0MMcut_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_60 = new GH1("H0MMcut_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_60 = new GH1("H0MMcut_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_80 = new GH1("H0MMcut_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_80 = new GH1("H0MMcut_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_100 = new GH1("H0MMcut_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_100 = new GH1("H0MMcut_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_120 = new GH1("H0MMcut_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_120 = new GH1("H0MMcut_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_140 = new GH1("H0MMcut_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut_140 = new GH1("H0MMcut_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut_160 = new GH1("H0MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
-
-
-   H0theta_285_305 = new GH1("H0theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
-
-   H0MMcut1 = new GH1("H0MMcut1","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_0 = new GH1("H0MMcut1_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
-
-   H0MMcut1_20 = new GH1("H0MMcut1_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
-
-   H0MMcut1_40 = new GH1("H0MMcut1_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_60 = new GH1("H0MMcut1_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_80 = new GH1("H0MMcut1_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_100 = new GH1("H0MMcut1_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_120 = new GH1("H0MMcut1_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_140 = new GH1("H0MMcut1_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
-
-   H0MMcut1_160 = new GH1("H0MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut_160 = new GH1("H0MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = -1", 200,600,1200);
 
 
-   H0theta_305_325 = new GH1("H0theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+   H0theta_285_305 = new GH1("H0theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
 
-   H0MMcut2 = new GH1("H0MMcut2","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1 = new GH1("H0MMcut1","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_0 = new GH1("H0MMcut2_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut1_0 = new GH1("H0MMcut1_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = -1", 200,600,1200);
 
-   H0MMcut2_20 = new GH1("H0MMcut2_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut1_20 = new GH1("H0MMcut1_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = -1", 200,600,1200);
 
-   H0MMcut2_40 = new GH1("H0MMcut2_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_40 = new GH1("H0MMcut1_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_60 = new GH1("H0MMcut2_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_60 = new GH1("H0MMcut1_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_80 = new GH1("H0MMcut2_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_80 = new GH1("H0MMcut1_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_100 = new GH1("H0MMcut2_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_100 = new GH1("H0MMcut1_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_120 = new GH1("H0MMcut2_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_120 = new GH1("H0MMcut1_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_140 = new GH1("H0MMcut2_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = +1", 200,600,1200);
+   H0MMcut1_140 = new GH1("H0MMcut1_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = -1", 200,600,1200);
 
-   H0MMcut2_160 = new GH1("H0MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
+   H0MMcut1_160 = new GH1("H0MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = -1", 200,600,1200);
+
+
+   H0theta_305_325 = new GH1("H0theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
+
+   H0MMcut2 = new GH1("H0MMcut2","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_0 = new GH1("H0MMcut2_0","Rootino Missing Mass 0<Theta<20,  OA-cut  Helicity = -1", 200,600,1200);
+
+   H0MMcut2_20 = new GH1("H0MMcut2_20","Rootino Missing Mass 20<Theta<40,  OA-cut  Helicity = -1", 200,600,1200);
+
+   H0MMcut2_40 = new GH1("H0MMcut2_40","Rootino Missing Mass 40<Theta<60, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_60 = new GH1("H0MMcut2_60","Rootino Missing Mass 60<Theta<80, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_80 = new GH1("H0MMcut2_80","Rootino Missing Mass 80<Theta<100, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_100 = new GH1("H0MMcut2_100","Rootino Missing Mass 100<Theta<120, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_120 = new GH1("H0MMcut2_120","Rootino Missing Mass 120<Theta<140, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_140 = new GH1("H0MMcut2_140","Rootino Missing Mass 140<Theta<160, OA-cut Helicity = -1", 200,600,1200);
+
+   H0MMcut2_160 = new GH1("H0MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = -1", 200,600,1200);
 
 
 
@@ -333,7 +333,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                             theta_265_285->Fill(photontree.GetTheta(0),time);
                                // cout <<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Dilli " << endl;
 
-                               }
+                               
 
                                  if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
                                    {
@@ -376,12 +376,13 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                             FillMissingMass(photontree,i,j,MMcut_160);
                                          }
 
-                                      }
-
-
+                                   }
+                              
+                               }
+                    
                       }
 
-            if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305)&&(photontree.GetNParticles()==1))
+            else if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305)&&(photontree.GetNParticles()==1))
              {
                  Double_t time;
                   time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
@@ -392,7 +393,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                           {
                             theta_285_305->Fill(photontree.GetTheta(0),time);
 
-                               }
+                               
 
                                  if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
                                    {
@@ -436,14 +437,15 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                          }
 
                                       }
-
-
+                            
+                               }
+           
                       }
 
 
 
 
-            if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325)&&(photontree.GetNParticles()==1))
+           else if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325)&&(photontree.GetNParticles()==1))
              {
                  Double_t time;
                   time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
@@ -454,7 +456,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                           {
                             theta_305_325->Fill(photontree.GetTheta(0),time);
 
-                               }
+                               
 
                                  if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
                                    {
@@ -497,8 +499,8 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                             FillMissingMass(photontree,i,j,MMcut2_160);
                                          }
 
-                                      }
-
+                                    }
+                              }
 
                       }
 
