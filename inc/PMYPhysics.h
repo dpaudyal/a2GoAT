@@ -33,12 +33,6 @@ private:
 
      GH1*	  MM_hel0;
      GH1*	  MM_hel1;
-    // GH1*     PhotonEnergy;
-    // GH1*     PhotonEnergy_hel0;
-    // GH1*     PhotonEnergy_hel1;
-    // GH1*     TaggerChannel_hel0;
-     //GH1*     TaggerChannel_hel0;
-    // GH1*     TaggerChannel_hel0;
 
      GH1*      H1theta_265_285;
      GH1*      H1MMcut;
@@ -130,37 +124,13 @@ protected:
     virtual Bool_t    Write();
 
 //*************************************************************************
-     //  void    Filltheta(const GTreeParticle& tree, GH1* gHist, Bool_t TaggerBinning);
-      // void    Filltheta(const GTreeParticle& tree,  Int_t particle_index, GH1* gHist, Bool_t TaggerBinning);
+
        void    FillPhotonEnergy(const GTreeParticle& tree, GH1* gHist);
        void    FillPhotonEnergy(const GTreeParticle& tree,  Int_t particle_index, GH1* gHist);
        void    FillTaggerChannel(const GTreeParticle& tree, GH1* gHist);
        void    FillTaggerChannel(const GTreeParticle& tree,  Int_t particle_index, GH1* gHist);
-      // void    Fillphi(const GTreeParticle& tree, GH1* gHist, Bool_t TaggerBinning);
-      // void    Fillphi(const GTreeParticle& tree,  Int_t particle_index,  GH1* gHist, Bool_t TaggerBinning);
-      // void	FillIMMM(const GTreeParticle& tree, GH2* gHist, Bool_t TaggerBinning = kFALSE);
-      // void	FillIMMM(const GTreeParticle& tree, Int_t particle_index, GH2* gHist, Bool_t TaggerBinning = kFALSE);
-     //  void FillIMMM(const GTreeParticle& tree, Int_t particle_index, Int_t tagger_index, GH2* gHist, Bool_t TaggerBinning = kFALSE);
-       //void FillThetaPhi(const GTreeParticle& tree, GH1* hHist, GH2* ghHist);
-      // void FillThetaPhi(const GTreeParticle& tree, Int_t particle_index, GH1* hHist, GH2* ghHist);
-   //   void FillMissingEnergy(const GTreeParticle& tree, GH1* gHist,GH2* hHist, Bool_t TaggerBinning);
-    //   void FillMissingEnergy(const GTreeParticle& tree, Int_t particle_index, GH1* gHist, GH2* hHist, Bool_t TaggerBinning);
-    //   void FillMissingEnergy(const GTreeParticle& tree, Int_t particle_index, Int_t tagger_index, GH1* gHist, GH2* hHist, Bool_t TaggerBinning);
-      // void      FillThetaTCMM(const GTreeParticle& tree, TH3* gHistPrompt, TH3* gHistRandom);
-      // void      FillThetaTCMM(const GTreeParticle& tree, Int_t particle_index, TH3* gHistPrompt, TH3* gHistRandom);
-       //void      FillThetaTCMM(const GTreeParticle& tree, Int_t particle_index,  Int_t tagger_index, TH3* gHistPrompt, TH3* gHistRandom);
-      // void  FillMMTC(const GTreeParticle& tree,  GH2* gHistMMTC, Bool_t TaggerBinning);
-      // void  FillMMTC(const GTreeParticle& tree, Int_t particle_index,  GH2* gHistMMTC, Bool_t TaggerBinning );
-      // void  FillMMTC(const GTreeParticle& tree, Int_t particle_index,  Int_t tagger_index, GH2* gHistMMTC, Bool_t TaggerBinning);
-
-      // void FillDilliAsym(const GTreeParticle& tree, Int_t particle_index, Int_t en_low,Int_t en_high,GH1* gHist,
-       //                               GH1* theta_imcut,GH1* imgg_0,GH1* imgg_10, GH1* imgg_20,GH1* imgg_30, GH1* imgg_40, GH1* imgg_50, GH1* imgg_60,GH1* imgg_70,GH1* imgg_80,
-      //                                GH1* imgg_90, GH1* imgg_100,GH1* imgg_110, GH1* imgg_120,GH1* imgg_130, GH1* imgg_140, GH1* imgg_150, GH1* imgg_160,GH1* imgg_170,Bool_t TaggerBinning);
 
 
-      // void FillDilliAsym(const GTreeMeson& tree, const GTreeTagger& taggertree, GH1* gHist,
-       //                               GH1* theta_imcut,GH1* theta_250_270,GH1* theta_270_290, GH1* theta_290_310,GH1* theta_MMcut, GH1* imgg_0, GH1* imgg_20,
-        //                              GH1* imgg_40,GH1* imgg_60,GH1* imgg_80, GH1* imgg_100, GH1* imgg_120,GH1* imgg_140, GH1* imgg_160);
 
       virtual  Double_t Opening_Angle(const TLorentzVector& t1, const TLorentzVector& t2 );
        void     FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,

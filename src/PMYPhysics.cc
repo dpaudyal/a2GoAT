@@ -17,25 +17,9 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
 
 //*********************************************************************************************
 
-//**********************************************************************************************
-//**********************************************************************************************
-
-//**********************************************************************************************
 
 
-//opening_angle 	= new GH1("opening_angle","opening_angle",180,0,180);
-//opening_angle_cuts 	= new GH1("opening_angle_cuts","opening_angle_cuts",180,0,180);
-//***********************************************************************************************
 
-//PhotonEnergy    = new GH1 ("PhotonEnergy", "PhotonEnergy",  450, 0,   450);
-//PhotonEnergy_hel0    = new GH1 ("PhotonEnergy_hel0", "PhotonEnergy_hel0",  450, 0,   450);
-//PhotonEnergy_hel1    = new GH1 ("PhotonEnergy_hel1", "PhotonEnergy_hel1",  450, 0,   450);
-
-//*******************************************************************************************************
-
-//TaggerChannel    = new GH1 ("TaggerChannel", "TaggerChannel",  352, 0,   352);
-//TaggerChannel_hel0    = new GH1 ("TaggerChannel_hel0", "TaggerChannel_hel0",  352, 0,   352);
-//TaggerChannel_hel1    = new GH1 ("TaggerChannel_hel1", "TaggerChannel_hel1",  352, 0,   352);
 
 //********************************************************************************************
     H1theta_265_285 = new GH1("H1theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
