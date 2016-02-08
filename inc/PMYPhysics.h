@@ -133,7 +133,7 @@ protected:
 
 
       virtual  Double_t Opening_Angle(const TLorentzVector& t1, const TLorentzVector& t2 );
-       void     FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,
+      virtual void     FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,
                                       GH1* theta_265_285,GH1* MMcut,GH1* MMcut_0,GH1* MMcut_20, GH1* MMcut_40,GH1* MMcut_60, GH1* MMcut_80, GH1* MMcut_100,
                                       GH1* MMcut_120,GH1* MMcut_140,GH1* MMcut_160,
                                       GH1* theta_285_305,GH1* MMcut1,GH1* MMcut1_0,GH1* MMcut1_20, GH1* MMcut1_40,GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,

@@ -304,8 +304,10 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
     {
         for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
         {
+           if ((photontree.GetNParticles()==1)&&(rootinotree.GetNParticles()!=0))
+           {
 
-            if ((taggertree.GetTaggedEnergy(j)>=265)&&( taggertree.GetTaggedEnergy(j)<285)&&(photontree.GetNParticles()==1))
+            if ((taggertree.GetTaggedEnergy(j)>=265)&&( taggertree.GetTaggedEnergy(j)<285))
              {
                  Double_t time;
                   time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
@@ -366,7 +368,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                     
                       }
 
-            else if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305)&&(photontree.GetNParticles()==1))
+            else if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305))
              {
                  Double_t time;
                   time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
@@ -429,7 +431,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
 
 
 
-           else if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325)&&(photontree.GetNParticles()==1))
+           else if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325))
              {
                  Double_t time;
                   time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
@@ -490,7 +492,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
 
 
 
-
+                 }
 
 
 
