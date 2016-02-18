@@ -34,7 +34,13 @@ private:
      GH1*	  MM_hel0;
      GH1*	  MM_hel1;
 
+     GH1*      H020;
+      GH1*     H120;
+     GH1*      H1OA;
+     GH1*      H1cop_1;
+     GH1*      H1MMnocut;
      GH1*      H1theta_265_285;
+     GH1*      H1ctheta_265_285;
      GH1*      H1MMcut;
      GH1*      H1MMcut_0;
      GH1*      H1MMcut_20;
@@ -46,7 +52,9 @@ private:
      GH1*      H1MMcut_140;
      GH1*      H1MMcut_160;
 
-     GH1*      H1theta_285_305;\
+     GH1*      H1MMnocut1;
+     GH1*      H1theta_285_305;
+     GH1*      H1ctheta_285_305;
      GH1*      H1MMcut1;
      GH1*      H1MMcut1_0;
      GH1*      H1MMcut1_20;
@@ -58,7 +66,9 @@ private:
      GH1*      H1MMcut1_140;
      GH1*      H1MMcut1_160;
 
+     GH1*      H1MMnocut2;
      GH1*      H1theta_305_325;
+     GH1*      H1ctheta_305_325;
      GH1*      H1MMcut2;
      GH1*      H1MMcut2_0;
      GH1*      H1MMcut2_20;
@@ -70,7 +80,11 @@ private:
      GH1*      H1MMcut2_140;
      GH1*      H1MMcut2_160;
 
+     GH1*      H0OA;
+     GH1*      H0cop_0;
+     GH1*      H0MMnocut;
      GH1*      H0theta_265_285;
+     GH1*      H0ctheta_265_285;
      GH1*      H0MMcut;
      GH1*      H0MMcut_0;
      GH1*      H0MMcut_20;
@@ -82,7 +96,9 @@ private:
      GH1*      H0MMcut_140;
      GH1*      H0MMcut_160;
 
-     GH1*      H0theta_285_305;\
+     GH1*      H0MMnocut1;
+     GH1*      H0theta_285_305;
+     GH1*      H0ctheta_285_305;
      GH1*      H0MMcut1;
      GH1*      H0MMcut1_0;
      GH1*      H0MMcut1_20;
@@ -94,7 +110,9 @@ private:
      GH1*      H0MMcut1_140;
      GH1*      H0MMcut1_160;
 
+     GH1*      H0MMnocut2;
      GH1*      H0theta_305_325;
+     GH1*      H0ctheta_305_325;
      GH1*      H0MMcut2;
      GH1*      H0MMcut2_0;
      GH1*      H0MMcut2_20;
@@ -133,15 +151,16 @@ protected:
 
 
       virtual  Double_t Opening_Angle(const TLorentzVector& t1, const TLorentzVector& t2 );
-      virtual void     FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,
-                                      GH1* theta_265_285,GH1* MMcut,GH1* MMcut_0,GH1* MMcut_20, GH1* MMcut_40,GH1* MMcut_60, GH1* MMcut_80, GH1* MMcut_100,
-                                      GH1* MMcut_120,GH1* MMcut_140,GH1* MMcut_160,
-                                      GH1* theta_285_305,GH1* MMcut1,GH1* MMcut1_0,GH1* MMcut1_20, GH1* MMcut1_40,GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,
-                                      GH1* MMcut1_120,GH1* MMcut1_140,GH1* MMcut1_160,
-                                      GH1* theta_305_325,GH1* MMcut2,GH1* MMcut2_0,GH1* MMcut2_20, GH1* MMcut2_40,GH1* MMcut2_60, GH1* MMcut2_80, GH1* MMcut2_100,
-                                      GH1* MMcut2_120,GH1* MMcut2_140,GH1* MMcut2_160);
+      void FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle, GH1* Cop_phi_diff, GH1* OA,
+                       GH1* MMnocut,   GH1* theta_265_285,  GH1* ctheta_265_285,  GH1* MMcut,          GH1* MMcut_0,        GH1* MMcut_20,     GH1* MMcut_40,  GH1* MMcut_60,  GH1* MMcut_80,  GH1* MMcut_100,
+                                                                                  GH1* MMcut_120,      GH1* MMcut_140,      GH1* MMcut_160,
+                       GH1* MMnocut1,  GH1* theta_285_305,  GH1* ctheta_285_305,  GH1* MMcut1,         GH1* MMcut1_0,       GH1* MMcut1_20,    GH1* MMcut1_40, GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,
+                                                                                  GH1* MMcut1_120,      GH1* MMcut1_140,     GH1* MMcut1_160,
+                       GH1* MMnocut2,  GH1* theta_305_325,  GH1* ctheta_305_325,  GH1* MMcut2,         GH1* MMcut2_0,       GH1* MMcut2_20,    GH1* MMcut2_40, GH1* MMcut2_60, GH1* MMcut2_80, GH1* MMcut2_100,
+                                                                                  GH1* MMcut2_120,      GH1* MMcut2_140,     GH1* MMcut2_160);
+
 //*************************************************************************
-			
+
 public:
     PMYPhysics();
     virtual ~PMYPhysics();

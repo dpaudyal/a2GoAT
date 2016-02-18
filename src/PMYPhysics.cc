@@ -1,28 +1,31 @@
 #include "PMYPhysics.h"
 
 PMYPhysics::PMYPhysics()
-{ 
+{
 
 //************************1D Histograms*******************************************************
-
-time 	= new GH1("time", 	"time", 	1400, -700, 700);
-time_hel0 	= new GH1("time_hel0", 	"time_hel0", 	1400, -700, 700);
-time_hel1 	= new GH1("time_hel1", 	"time_hel1", 	1400, -700, 700);
-
+//time 	= new GH1("time", 	"time", 	1400, -700, 700);
+//time_hel0 	= new GH1("time_hel0", 	"time_hel0", 	1400, -700, 700);
+//time_hel1 	= new GH1("time_hel1", 	"time_hel1", 	1400, -700, 700);
 //***********************************************************************************************
-
 //MM		= new GH1("MM", 	"MM", 	 	500,   700, 1200);
-MM_hel0		= new GH1("MM_hel0", 	"MM_hel0", 	 	500,   700, 1200);
-MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
+//MM_hel0		= new GH1("MM_hel0", 	"MM_hel0", 	 	500,   700, 1200);
+//MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
 
 //*********************************************************************************************
-
-
-
-
-
 //********************************************************************************************
+
+
+    H1OA		= new GH1("H1OA",	"Opening Angle for Helicity = +1" ,180,0, 180);
+
+    H1cop_1	 = new GH1("H1cop_1",		"Coplanarity angle for Helicity = +1 ",			360,0,360);
+
+    H1MMnocut = new GH1("H1MMnocut","Rootino Missing Mass without cut  Helicity = +1", 200,600,1200);
+
     H1theta_265_285 = new GH1("H1theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+    H1ctheta_265_285 = new GH1("H1ctheta_265_285","Theta Distribution  0<Rootino.Theta<180   Helicity=+1",36,0,180);
+
 
     H1MMcut = new GH1("H1MMcut","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
 
@@ -45,7 +48,11 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
     H1MMcut_160 = new GH1("H1MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
 
 
+    H1MMnocut1 = new GH1("H1MMnocut1","Rootino Missing Mass without cut  Helicity = +1", 200,600,1200);
+
     H1theta_285_305 = new GH1("H1theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+    H1ctheta_285_305 = new GH1("H1ctheta_285_305","Theta Distribution  0<Rootino.Theta<180   Helicity=+1",36,0,180);
 
     H1MMcut1 = new GH1("H1MMcut1","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
 
@@ -68,7 +75,11 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
     H1MMcut1_160 = new GH1("H1MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
 
 
+    H1MMnocut2 = new GH1("H1MMnocut2","Rootino Missing Mass without cut Helicity = +1", 200,600,1200);
+
     H1theta_305_325 = new GH1("H1theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=+1",36,0,180);
+
+    H1ctheta_305_325 = new GH1("H1ctheta_305_325","Theta Distribution  0<Rootino.Theta<180   Helicity=+1",36,0,180);
 
     H1MMcut2 = new GH1("H1MMcut2","Rootino Missing Mass with no  OA-cut Helicity = +1", 200,600,1200);
 
@@ -91,7 +102,17 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
     H1MMcut2_160 = new GH1("H1MMcut2_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = +1", 200,600,1200);
 
 //**************************************************************************************************************
+
+
+   H0OA		= new GH1("H0OA",	"Opening Angle for Helicity = -1" ,180,0, 180);
+
+   H0cop_0	 = new GH1("H0cop_0",		"Coplanarity angle for Helicity = -1 ",			360,0,360);
+
+   H0MMnocut = new GH1("H1MMnocut","Rootino Missing Mass without cut Helicity = -1", 200,600,1200);
+
    H0theta_265_285 = new GH1("H0theta_265_285","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
+
+   H0ctheta_265_285 = new GH1("H0ctheta_265_285","Theta Distribution  0<Rootino.Theta<180   Helicity=-1",36,0,180);
 
    H0MMcut = new GH1("H0MMcut","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
 
@@ -114,7 +135,11 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
    H0MMcut_160 = new GH1("H0MMcut_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = -1", 200,600,1200);
 
 
+   H0MMnocut1 = new GH1("H1MMnocut1","Rootino Missing Mass without cut Helicity = +1", 200,600,1200);
+
    H0theta_285_305 = new GH1("H0theta_285_305","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
+
+   H0ctheta_285_305 = new GH1("H0ctheta_285_305","Theta Distribution  0<Rootino.Theta<180   Helicity=-1",36,0,180);
 
    H0MMcut1 = new GH1("H0MMcut1","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
 
@@ -137,7 +162,11 @@ MM_hel1		= new GH1("MM_hel1", 	"MM_hel1", 	 	500,   700, 1200);
    H0MMcut1_160 = new GH1("H0MMcut1_160","Rootino Missing Mass 160<Theta<180,  OA-cut  Helicity = -1", 200,600,1200);
 
 
+   H0MMnocut2 = new GH1("H1MMnocut2","Rootino Missing Mass without cut Helicity = +1", 200,600,1200);
+
    H0theta_305_325 = new GH1("H0theta_305_325","Theta Distribution  0<Photon.Theta<180   Helicity=-1",36,0,180);
+
+   H0ctheta_305_325 = new GH1("H0ctheta_305_325","Theta Distribution  0<Rootino.Theta<180   Helicity=-1",36,0,180);
 
    H0MMcut2 = new GH1("H0MMcut2","Rootino Missing Mass with no  OA-cut Helicity = -1", 200,600,1200);
 
@@ -172,16 +201,16 @@ PMYPhysics::~PMYPhysics()
 
 Bool_t	PMYPhysics::Init()
 {
-	cout << "Initialising physics analysis..." << endl;
-	cout << "--------------------------------------------------" << endl << endl;
+    cout << "Initialising physics analysis..." << endl;
+    cout << "--------------------------------------------------" << endl << endl;
 
-	if(!InitBackgroundCuts()) return kFALSE;
+    if(!InitBackgroundCuts()) return kFALSE;
     if(!InitTargetMass()) return kFALSE;
 
     if(!PPhysics::Init()) return kFALSE;
 
     cout << "--------------------------------------------------" << endl;
-	return kTRUE;
+    return kTRUE;
 }
 
 Bool_t	PMYPhysics::Start()
@@ -198,92 +227,7 @@ Bool_t	PMYPhysics::Start()
     return kTRUE;
 }
 
-void	PMYPhysics::ProcessEvent()
-{
-    //*************************************************************************
-    if(eventzero == 0)
-        {
-            ifstream infile;
-            string inputFileA;
-            infile.open("/home/dpaudyal/Butanol_Polarization/2014_Targ_Pol_correct.txt");
-            string number_file[450];
-            double polarisation[450];
-            inputFileA = inputFile->GetName();
 
-            for( int i = 0; i < 450; i = i + 1 )
-            {
-                 infile >> number_file[i] >> polarisation[i];
-            }
-            for( int i = 0; i < 450; i = i + 1 )
-            {
-                if(number_file[i]==inputFileA)
-                {
-                   Target_Pol = polarisation[i];
-                   Scal_factor_target_pol=(-100/(polarisation[i]));
-                }
-            }
-        cout << "target polarisation: " << Target_Pol << " scaling factor: " << Scal_factor_target_pol << endl;
-
-	   // scale_factor_global = Scal_factor_target_pol;
-
-
-        }
-        eventzero = 1;
-
-//*********************************************************************************************
-
-//******************************************************************************
-
-
-   //**********************************************************************
-    Int_t nerror = 0;
-    nerror = GetTrigger()->GetNErrors();
-    Bool_t hel = GetTrigger()->GetHelicity();
-    if (nerror==0) {
-    // cout << "helicity  "<< hel << endl;
-        if (hel == kTRUE)
-        {
-
-                            FillTime(*GetNeutralPions(),time_hel0);
-                            FillMissingMass(*GetNeutralPions(),MM_hel0, kTRUE);
-                            FillDilliComp( *GetTagger(),*GetRootinos(),*GetPhotons(), 20,
-                                                            H1theta_265_285, H1MMcut, H1MMcut_0, H1MMcut_20, H1MMcut_40, H1MMcut_60, H1MMcut_80, H1MMcut_100, H1MMcut_120,H1MMcut_140,H1MMcut_160,
-                                                            H1theta_285_305, H1MMcut1,H1MMcut1_0,H1MMcut1_20, H1MMcut1_40,H1MMcut1_60, H1MMcut1_80, H1MMcut1_100, H1MMcut1_120, H1MMcut1_140,H1MMcut1_160,
-                                                            H1theta_305_325, H1MMcut2,H1MMcut2_0,H1MMcut2_20, H1MMcut2_40,H1MMcut2_60, H1MMcut2_80, H1MMcut2_100, H1MMcut2_120, H1MMcut2_140,H1MMcut2_160);
-
-        }
-        else
-        {
-                             FillTime(*GetNeutralPions(),time_hel1);
-                             FillMissingMass(*GetNeutralPions(),MM_hel1, kTRUE);
-                             FillDilliComp( *GetTagger(), *GetRootinos(),*GetPhotons(), 20,
-                                                             H0theta_265_285, H0MMcut, H0MMcut_0, H0MMcut_20, H0MMcut_40, H0MMcut_60, H0MMcut_80, H0MMcut_100, H0MMcut_120,H0MMcut_140,H0MMcut_160,
-                                                             H0theta_285_305, H0MMcut1,H0MMcut1_0,H0MMcut1_20, H0MMcut1_40,H0MMcut1_60, H0MMcut1_80, H0MMcut1_100, H0MMcut1_120, H0MMcut1_140,H0MMcut1_160,
-                                                             H0theta_305_325, H0MMcut2,H0MMcut2_0,H0MMcut2_20, H0MMcut2_40,H0MMcut2_60, H0MMcut2_80, H0MMcut2_100, H0MMcut2_120, H0MMcut2_140,H0MMcut2_160);
-
-
-        }
-
-
-
-    }
-  //**********************************************************************
-
-
-//*************************************************************************************************
-}
-
-
-void	PMYPhysics::ProcessScalerRead()
-{
-    PPhysics::ProcessScalerRead();
-}
-
-Bool_t	PMYPhysics::Write()
-{
-    // Write all GH1's and TObjects defined in this class
-    return GTreeManager::Write();
-}
 //********************************************************************************************************
 
 //************************************************************************************************************
@@ -292,42 +236,44 @@ Bool_t	PMYPhysics::Write()
 
    // gHist->Scale(Scal_factor_target_pol);
 //**************************************************************************************************************
-void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle,
-                               GH1* theta_265_285,GH1* MMcut,GH1* MMcut_0,GH1* MMcut_20, GH1* MMcut_40,GH1* MMcut_60, GH1* MMcut_80, GH1* MMcut_100,
-                               GH1* MMcut_120,GH1* MMcut_140,GH1* MMcut_160,
-                               GH1* theta_285_305,GH1* MMcut1,GH1* MMcut1_0,GH1* MMcut1_20, GH1* MMcut1_40,GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,
-                               GH1* MMcut1_120,GH1* MMcut1_140,GH1* MMcut1_160,
-                               GH1* theta_305_325,GH1* MMcut2,GH1* MMcut2_0,GH1* MMcut2_20, GH1* MMcut2_40,GH1* MMcut2_60, GH1* MMcut2_80, GH1* MMcut2_100,
-                               GH1* MMcut2_120,GH1* MMcut2_140,GH1* MMcut2_160)
+void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticle& rootinotree, const GTreeParticle& photontree, Int_t angle, GH1* Cop_phi_diff, GH1* OA,
+                GH1* MMnocut,   GH1* theta_265_285,  GH1* ctheta_265_285, GH1* MMcut,   GH1* MMcut_0,  GH1* MMcut_20, GH1* MMcut_40,  GH1* MMcut_60,  GH1* MMcut_80,  GH1* MMcut_100, GH1* MMcut_120,
+                GH1* MMcut_140,  GH1* MMcut_160, GH1* MMnocut1,  GH1* theta_285_305,  GH1* ctheta_285_305, GH1* MMcut1, GH1* MMcut1_0,  GH1* MMcut1_20,    GH1* MMcut1_40, GH1* MMcut1_60, GH1* MMcut1_80, GH1* MMcut1_100,
+                GH1* MMcut1_120,  GH1* MMcut1_140,  GH1* MMcut1_160, GH1* MMnocut2,  GH1* theta_305_325,  GH1* ctheta_305_325, GH1* MMcut2, GH1* MMcut2_0, GH1* MMcut2_20,    GH1* MMcut2_40, GH1* MMcut2_60, GH1* MMcut2_80, GH1* MMcut2_100,
+                GH1* MMcut2_120,   GH1* MMcut2_140,  GH1* MMcut2_160)
 {
-    for (Int_t i = 0; i < photontree.GetNParticles(); i++)
-    {
-        for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
-        {
-           if ((photontree.GetNParticles()==1)&&(rootinotree.GetNParticles()!=0))
-           {
-
-            if ((taggertree.GetTaggedEnergy(j)>=265)&&( taggertree.GetTaggedEnergy(j)<285))
-             {
-                 Double_t time;
-                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
-
-
-
-                       if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
+ for (Int_t i = 0; i < photontree.GetNParticles(); i++)
+   {
+     for (Int_t j = 0; j < GetTagger()->GetNTagged(); j++)
+       {
+        Double_t time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
+         if ((photontree.GetNParticles()==1)&&(rootinotree.GetNParticles()!=0))
+          {
+            Double_t phidiff =  TMath::Abs(photontree.GetPhi(0) - rootinotree.GetPhi(0));
+             if ((phidiff < 170) && (phidiff > 190));
+               {
+                Cop_phi_diff->Fill(TMath::Abs(photontree.GetPhi(0) - rootinotree.GetPhi(0)),time);
+                 OA->Fill(Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))*TMath::RadToDeg(),time);
+                  if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
+                    {
+                    if ((taggertree.GetTaggedEnergy(j)>=265)&&( taggertree.GetTaggedEnergy(j)<285))
+                      {
+                       FillMissingMass(photontree,i,j,MMnocut);
+                        if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
                           {
-                            theta_265_285->Fill(photontree.GetTheta(0),time);
-                               // cout <<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Dilli " << endl;
-
-                               
-
-                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
-                                   {
-                                           FillMissingMass(photontree,i,j,MMcut);
-
-                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                        // Double_t phidiff =  TMath::Abs(photontree.GetPhi(0) - rootinotree.GetPhi(0));
+                          // if ((phidiff < 170) && (phidiff > 190));
+                            // {
+                             //  Cop_phi_diff->Fill(TMath::Abs(photontree.GetPhi(0) - rootinotree.GetPhi(0)),time);
+                               // OA->Fill(Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))*TMath::RadToDeg(),time);
+                               //   if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
+                                  //  {
+                                   theta_265_285->Fill(photontree.GetTheta(0),time);
+                                    ctheta_265_285->Fill(rootinotree.GetTheta(0),time);
+                                     FillMissingMass(photontree,i,j,MMcut);
+                                      if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
                                         {
-                                            FillMissingMass(photontree,i,j,MMcut_0);
+                                         FillMissingMass(photontree,i,j,MMcut_0);
                                         }
                                         else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
                                         {
@@ -339,7 +285,7 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                         }
                                         else if ((photontree.GetTheta(0)>=60)&&(photontree.GetTheta(0)<80))
                                         {
-                                            FillMissingMass(photontree,i,j,MMcut_60);
+                                            FillMissingMass(photontree,i, j,MMcut_60);
                                         }
                                         else if ((photontree.GetTheta(0)>=80)&&(photontree.GetTheta(0)<100))
                                         {
@@ -360,34 +306,23 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                         else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
                                         {
                                             FillMissingMass(photontree,i,j,MMcut_160);
-                                         }
-
-                                   }
-                              
-                               }
-                    
+                                        }
+                                   // }
+                                //}
+                            }
                       }
-
             else if ((taggertree.GetTaggedEnergy(j)>=285)&&( taggertree.GetTaggedEnergy(j)<305))
-             {
-                 Double_t time;
-                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
-
-
-
-                       if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
-                          {
+               {
+               Double_t  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
+                  FillMissingMass(photontree,i,j,MMnocut1);
+                      if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
+                         {
                             theta_285_305->Fill(photontree.GetTheta(0),time);
-
-                               
-
-                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
-                                   {
-                                             FillMissingMass(photontree,i,j,MMcut1);
-
-                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
-                                        {
-                                            FillMissingMass(photontree,i,j,MMcut1_0);
+                               ctheta_285_305->Fill(rootinotree.GetTheta(0),time);
+                                 FillMissingMass(photontree,i,j,MMcut1);
+                                   if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                                     {
+                                       FillMissingMass(photontree,i,j,MMcut1_0);
                                         }
                                         else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
                                         {
@@ -420,37 +355,21 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                         else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
                                         {
                                             FillMissingMass(photontree,i,j,MMcut1_160);
-                                         }
-
                                       }
-                            
-                               }
-           
-                      }
-
-
-
-
+                                 }
+                            }
            else if ((taggertree.GetTaggedEnergy(j)>=305)&&( taggertree.GetTaggedEnergy(j)<325))
              {
-                 Double_t time;
-                  time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
-
-
-
+                   Double_t time = GetTagger()->GetTaggedTime(j) - photontree.GetTime(i);
+                     FillMissingMass(photontree,i,j,MMnocut2);
                        if ((CalcMissingMass(photontree,0,j)<970)&&(CalcMissingMass(photontree,0,j)>910))
                           {
                             theta_305_325->Fill(photontree.GetTheta(0),time);
-
-                               
-
-                                 if  (Opening_Angle(CalcMissingP4(photontree,i,j),rootinotree.Particle(0))<angle*TMath::Pi()/180)
-                                   {
-                                            FillMissingMass(photontree,i,j,MMcut2);
-
-                                        if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
-                                        {
-                                            FillMissingMass(photontree,i,j,MMcut2_0);
+                              ctheta_305_325->Fill(rootinotree.GetTheta(0),time);
+                                FillMissingMass(photontree,i,j,MMcut2);
+                                  if ((photontree.GetTheta(0)>=0)&&(photontree.GetTheta(0)<20))
+                                     {
+                                       FillMissingMass(photontree,i,j,MMcut2_0);
                                         }
                                         else if ((photontree.GetTheta(0)>=20)&&(photontree.GetTheta(0)<40))
                                         {
@@ -483,26 +402,113 @@ void PMYPhysics::FillDilliComp(const GTreeTagger& taggertree, const GTreeParticl
                                         else if ((photontree.GetTheta(0)>=160)&&(photontree.GetTheta(0)<180))
                                         {
                                             FillMissingMass(photontree,i,j,MMcut2_160);
-                                         }
-
                                     }
-                              }
+                               }
+                          }
+                       }
 
-                      }
-
-
-
-                 }
-
-
+                }
 
             }
-       }
+        }
+    }
 }
+//************************************************************************
+void	PMYPhysics::ProcessEvent()
+{
+
+    if(eventzero == 0)
+        {
+            ifstream infile;
+            string inputFileA;
+            infile.open("/home/dpaudyal/Butanol_Polarization/2014_Targ_Pol_correct.txt");
+            string number_file[450];
+            double polarisation[450];
+            inputFileA = inputFile->GetName();
+
+            for( int i = 0; i < 450; i = i + 1 )
+            {
+                 infile >> number_file[i] >> polarisation[i];
+            }
+            for( int i = 0; i < 450; i = i + 1 )
+            {
+                if(number_file[i]==inputFileA)
+                {
+                   Target_Pol = polarisation[i];
+                   Scal_factor_target_pol=(-100/(polarisation[i]));
+                }
+            }
+        cout << "target polarisation: " << Target_Pol << " scaling factor: " << Scal_factor_target_pol << endl;
+
+       // scale_factor_global = Scal_factor_target_pol;
+
+
+        }
+        eventzero = 1;
+
+//*********************************************************************************************
+
+//******************************************************************************
+
+
+   //**********************************************************************
+    Int_t nerror = 0;
+    nerror = GetTrigger()->GetNErrors();
+    Bool_t hel = GetTrigger()->GetHelicity();
+
+    if (nerror==0) {
+     //cout << "helicity  "<< hel << endl;
+        if (hel == kTRUE)
+                           {
+
+                           // FillTime(*GetNeutralPions(),time_hel0);
+                           // FillMissingMass(*GetNeutralPions(),MM_hel0, kTRUE);
+                            FillDilliComp( *GetTagger(),*GetRootinos(),*GetPhotons(), 15,  H0cop_0, H0OA,
+                                                H1MMnocut,    H1theta_265_285, H1ctheta_265_285,    H1MMcut, H1MMcut_0, H1MMcut_20, H1MMcut_40, H1MMcut_60, H1MMcut_80, H1MMcut_100, H1MMcut_120,H1MMcut_140,H1MMcut_160,
+                                                H1MMnocut1,   H1theta_285_305, H1ctheta_285_305,    H1MMcut1,H1MMcut1_0,H1MMcut1_20, H1MMcut1_40,H1MMcut1_60, H1MMcut1_80, H1MMcut1_100, H1MMcut1_120, H1MMcut1_140,H1MMcut1_160,
+                                                H1MMnocut2,   H1theta_305_325, H1ctheta_305_325,   H1MMcut2,H1MMcut2_0,H1MMcut2_20, H1MMcut2_40,H1MMcut2_60, H1MMcut2_80, H1MMcut2_100, H1MMcut2_120, H1MMcut2_140,H1MMcut2_160);
+
+                             }
+                    else
+                             {
+                            // FillTime(*GetNeutralPions(),time_hel1);
+                            // FillMissingMass(*GetNeutralPions(),MM_hel1, kTRUE);
+                             FillDilliComp( *GetTagger(), *GetRootinos(),*GetPhotons(), 15,   H1cop_1, H1OA,
+                                              H0MMnocut,    H0theta_265_285, H0ctheta_265_285,  H0MMcut, H0MMcut_0, H0MMcut_20, H0MMcut_40, H0MMcut_60, H0MMcut_80, H0MMcut_100, H0MMcut_120,H0MMcut_140,H0MMcut_160,
+                                              H0MMnocut1,   H0theta_285_305, H0ctheta_285_305, H0MMcut1,H0MMcut1_0,H0MMcut1_20, H0MMcut1_40,H0MMcut1_60, H0MMcut1_80, H0MMcut1_100, H0MMcut1_120, H0MMcut1_140,H0MMcut1_160,
+                                              H0MMnocut2,   H0theta_305_325, H0ctheta_305_325, H0MMcut2,H0MMcut2_0,H0MMcut2_20, H0MMcut2_40,H0MMcut2_60, H0MMcut2_80, H0MMcut2_100, H0MMcut2_120, H0MMcut2_140,H0MMcut2_160);
+
+
+                             }
+
+
+
+                   }
+
+
+
+ }
+
+//*************************************************************************************************
+
+void	PMYPhysics::ProcessScalerRead()
+{
+    PPhysics::ProcessScalerRead();
+}
+
+Bool_t	PMYPhysics::Write()
+{
+    // Write all GH1's and TObjects defined in this class
+    return GTreeManager::Write();
+}
+
+
+
 
 Double_t PMYPhysics::Opening_Angle(const TLorentzVector& t1, const TLorentzVector& t2 )
        {
             TVector3 p1 = t1.Vect();
             TVector3 p2 = t2.Vect();
             return p1.Angle(p2);
+            //oang = p1.Angle(p2)*TMath::RadToDeg();
        }
